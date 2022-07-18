@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: darkgray;
+}
+nav.sticky{
+    background: deepskyblue;
+    height: 110px;
+    padding: 5px 0;
+}
+#top-nav{
+    position: fixed;
+    width: 100%;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+#top-nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container img{
+    height: 100px;
+}
+.container .f-right li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+.container .f-right li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.4s ease;
+}
+.container .f-right li a:hover{
+    color: crimson;
+}
+.home{
+    display: flex;
+    background: url('../Images/gambar1.jpg')no-repeat center;
+    min-height: 150vh;
+    background-size: cover;
+    width: 100%;
+}
+.homepage .judul{
+    color: #fff;
+    font-size: 100px;
+    margin-top: 200px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.homepage .button{
+    margin-top: 20px;
+}
+.homepage .situs{
+    display: inline-block;
+    color: #fff;
+    background: crimson;
+    font-size: 30px;
+    padding: 12px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.homepage .situs:hover{
+    color: #fff;
+    font-weight: bold;
+}
+.history, .Travel{
+    font-family: 'Poppins',sans-serif;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgb(0, 0,0);
+    max-width: 1200px;
+    margin-left: 10px;
+}
+.history  .title{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.history .title::before{
+    position: absolute;
+    background: crimson;
+    content: "";
+    left: 50%;
+    bottom: 0px;
+    width: 180px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+.history .history-content img{
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover;
+    object-position: center;
+}
+article{
+   
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.Travel .title{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.Travel .title::before{
+    position: absolute;
+    background: crimson;
+    content: "";
+    left: 50%;
+    bottom: 0px;
+    width: 180px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+.gambar{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.box h4{
+    font-family: 'Poppins', sans-serif;
+}
+.profile{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.card{
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.profile-picture{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition-property: all;
+    transition-duration: 400ms;
+}
+.card:hover > .profile-picture{
+    margin-top: 30px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.profile-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 300ms;
+    transition-delay: 100ms;
+    transition-timing-function: cubic-bezier(0.70,0,0.35,1);
+}
+.card:hover > .profile-content{
+    flex: 1;
+}
+.nama{
+    margin-top: 30px;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+}
+.status{
+    margin-top: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+.deskripsi{
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-right: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+}
+.footer{
+    padding: 20px;
+    color: #fff;
+    background-color: crimson;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 10px;
+}
